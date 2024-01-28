@@ -21,7 +21,7 @@
     --bg-color:#111;
 
     --big-font: 1.7rem;
-    --h2-font:1.2 rem;
+    --h2-font:1.2rem;
     --p-font:1rem;
     --second-font: 0.8rem;
 }
@@ -31,23 +31,20 @@
     float: none;
 }
 
-body{
+.body{
     background: var(--bg-color);
     color: var(--text-color);
 }
 
 
-header{
+.header{
     /*border: 1px solid red;*/
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    background: transparent;
-    padding:20px 10%;
+    padding: 0 9% 0 9%;
+
 }
 
 .logo{
@@ -56,26 +53,6 @@ header{
     color: var(--text-color);
     font-size: 33px;
     font-weight: 600;
-}
-
-.menu{
-    display: flex;
-
-}
-
-.menu a {
-    color: var(--text-color);
-    font-size:var(--p-font);
-    font-weight: 300;
-    margin: 0 10px;
-}
-
-.menu a:hover{
-    color: var(--main-color);
-}
-
-.menu a:active{
-    color: var(--main-color);
 }
 
 .reserva-buttom{
@@ -129,14 +106,9 @@ section{
     height: auto;
 }
 
-.home-text{
-    font-size: var(--big-font);
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 3rem;
-}
 
-span{
+
+.span{
     color: var(--main-color);
 }
 
@@ -149,6 +121,7 @@ span{
     font-weight: 500;
     border-radius: 2rem;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 .btn-home:hover{
