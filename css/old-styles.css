@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+:root{
+
+    --main-color: #ff9f0d;
+    --over-color: #8b5504;
+    --text-color: #fff;
+    --other-color: #212121;
+    --second-color: #9e9e9e;
+    --bg-color:#111;
+
+    --big-font: 1.7rem;
+    --h2-font:1.2rem;
+    --p-font:1rem;
+    --second-font: 0.8rem;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+.body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+.header{
+    /*border: 1px solid red;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 9% 0 9%;
+
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+    color: var(--text-color);
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.reserva-buttom{
+    display:flex;
+    width: 110px;
+    justify-content: center;
+    background: var(--main-color);
+    border-radius: 3rem;
+    box-shadow: #ff9f0d 0px 1px 8px;
+}
+
+.reserva-buttom a{
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 700;
+    padding: 4px 13px;
+}
+
+.reserva-buttom a:hover{
+    color: var(--text-color);
+}
+
+/* home */
+
+section{
+    /*border: 1px solid red;*/
+    padding: 20px 10%;
+}
+
+.home{
+    position: relative;
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.img-home{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 15px;
+    
+}
+.home-img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.span{
+    color: var(--main-color);
+}
+
+.btn-home{
+   display: inline-block;
+   padding: 15px 30px;
+    background: var(--other-color);
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    border-radius: 2rem;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.btn-home:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+/* Podria probar */
+
+.podrias-probar-text{
+    text-align: center;
+    background-color: var(--other-color);
+    padding: 20px;
+    border-radius: 30px; 
+
+}
+
+.podrias-probar{
+    padding: 10px 10% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    text-align: center;
+}
+
+.podrias-probar-box{
+    padding: 40px;
+    background-color: var(--other-color);
+    border-radius: 30px; 
+}
+
+.img-podrias-probar{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.podrias-probar p{
+    margin-top: 10px;
+    font-style: italic;
+    font-size: var(--second-font);
+}
+
+
+/* Sobre Nosotros */
+
+
+.about{
+    padding: 10px 10% 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 200px;
+
+}
+
+.about-img img{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.about-text h2{
+    font-size: var(--big-font);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.about-text p{
+    font-size: var(--p-font);
+    
+}
+
+/* eventos*/
+
+.eventos{
+    padding: 10px 10% 70px;
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 15px;
+}
+
+
+/* reserva*/
+
+.reserva{
+ 
+    margin-top: 150px;
+    text-align: center;
+       
+}
+
+.reserva-img img{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* carta*/
+
+.carta{
+    padding: 10px 10% 70px;
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 15px;
+}
+
+.carta h2, .carta-comidas h2{
+    color: var(--main-color);
+}
+
+.carta p, .carta-comidas p{
+    font-style: italic;
+}
+
+
+
+
+
+/* footer*/
+.footer{
+    padding: 10px 10% 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--other-color);
+    border-radius: 30px;
+    text-align: center;
+    color: var(--text-color);
+    
+}
+
+.footer-text a{
+    font-size: var(--p-font);
+    color: var(--text-color);
+}

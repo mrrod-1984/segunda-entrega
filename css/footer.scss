@@ -1,0 +1,34 @@
+
+
+// variables
+
+
+$main-color: #ff9f0d;
+$over-color: #8b5504;
+$text-color: #fff;
+$other-color: #212121;
+$second-color: #9e9e9e;
+$bg-color:#111;
+
+$big-font: 1.7rem;
+$h2-font:1.2rem;
+$p-font:1rem;
+$second-font: 0.8rem;
+
+
+/* footer*/
+.footer{
+    padding: 10px 10% 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: $other-color;
+    border-radius: 30px;
+    text-align: center;
+    color: $text-color;
+    
+}
+
+.footer-text a{
+    font-size: $p-font;
+    color: $text-color;
+}

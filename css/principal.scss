@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+//root
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+list-style: none;
+text-decoration: none;
+scroll-behavior: smooth;
+scroll-padding-top: 3rem;
+}
+
+// variables
+
+
+$main-color: #ff9f0d;
+$over-color: #8b5504;
+$text-color: #fff;
+$other-color: #212121;
+$second-color: #9e9e9e;
+$bg-color:#111;
+
+$big-font: 1.7rem;
+$h2-font:1.2rem;
+$p-font:1rem;
+$second-font: 0.8rem;
+
+// mixins
+
+@mixin secciones{
+    padding: 10px 10% 70px;
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 15px;
+}
+
+@mixin imagenes{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+
+// general styles
+
+.body{
+    background: $bg-color;
+    color: $text-color;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 9% 0 9%;
+}
+
+// home
+
+section{
+    padding: 20px 10%;
+}
+
+.home{
+    position: relative;
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.img-home{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border-radius: 15px;
+    
+}
+.home-img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.span{
+    color: $main-color;
+}
+
+.btn-home{
+   display: inline-block;
+   padding: 15px 30px;
+    background: $other-color;
+    color: $main-color;
+    font-size: $p-font;
+    font-weight: 500;
+    border-radius: 2rem;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.btn-home:hover{
+    background:$main-color;
+    color: $bg-color;
+}
+
+
+
+// podrias probar
+
+
+
+.podrias-probar-text{
+    text-align: center;
+    background-color: $other-color;
+    padding: 20px;
+    border-radius: 30px; 
+
+}
+
+.podrias-probar{
+    padding: 10px 10% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    text-align: center;
+}
+
+.podrias-probar-box{
+    padding: 40px;
+    background-color: $other-color;
+    border-radius: 30px; 
+}
+
+.img-podrias-probar{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.podrias-probar p{
+    margin-top: 10px;
+    font-style: italic;
+    font-size: $second-font;
+}
+
+
+// sobre nosotros
+
+.about{
+    padding: 10px 10% 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 200px;
+
+}
+
+.about-img img{
+    @include imagenes;
+}
+
+.about-text h2{
+    font-size: $big-font;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+.about-text p{
+    font-size: $p-font;
+    
+}
+
+
+// eventos
+
+.eventos{
+    @include secciones;
+    
+}
+
+
+// reserva
+
+.reserva{
+ 
+    margin-top: 150px;
+    text-align: center;
+       
+}
+
+.reserva-img img{
+    @include imagenes;
+}
+
+// carta
+
+.carta{
+    @include secciones;
+    
+    h2{
+        color: $main-color;
+    }
+
+    p{
+        font-style: italic;
+    }
+
+}
+
+.carta-comidas{
+        
+    h2{
+        color: $main-color;
+    }
+
+    p{
+        font-style: italic;
+    }
+
+}
